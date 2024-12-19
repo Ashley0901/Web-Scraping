@@ -1,0 +1,40 @@
+Web Scraping : Books to Scrape - High Rating Book Scraper
+
+Descripción:
+Este codigo realiza web scraping en el sitio web Books to Scrape para extraer los títulos
+de los libros que tienen una calificación alta (4 o 5 estrellas).
+Utiliza las bibliotecas requests y BeautifulSoup
+para navegar por las páginas del sitio web y analizar el contenido HTML.
+
+Requisitos:
+Para ejecutar este codigo, necesitas instalar las siguientes bibliotecas de Python:
+requests
+beautifulsoup4
+
+
+Estructura del Código:
+
+El código utiliza una base de URL que le permite iterar a través de las 50 páginas disponibles en el sitio web.
+
+El bucle principal recorre cada página del sitio y
+Descarga el contenido HTML.
+Crea una "sopa" para analizar el HTML.
+Busca todos los libros con ratings de 4 o 5 estrellas.
+
+Se utilizan condicionales para verificar si un libro tiene una calificación de 4 o 5 estrellas
+mediante clases CSS.
+Los títulos de los libros con calificación alta se almacenan en una lista llamada libros_ato_rating.
+
+Salida:
+Se imprimen los títulos de todos los libros encontrados.
+
+Uso:
+Ejecuta el código directamente en Python desde la cmd con el comando:
+python proyecto_web_scraping.py
+o corriendolo desde un IDE
+
+Al finalizar, verás en pantalla los títulos de todos los libros con calificación de 4 o 5 estrellas.
+
+Nota
+El código asume que la estructura del sitio web Books to Scrape no cambia.
+
